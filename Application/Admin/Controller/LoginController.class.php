@@ -10,6 +10,9 @@ class LoginController extends Controller{
 		$this->display();
 	}
 	
+	/**
+	 * 检测登录信息
+	 */
 	public function check(){
 		$username=$_POST['username'];
 		$password=$_POST['password'];
@@ -32,6 +35,14 @@ class LoginController extends Controller{
 		D("Admin")->updateByAdminId($ret['admin_id'],array('last_login_time'=>time()));
 		session('adminUser',$ret);
 		return jsonResult(1, '登录成功');
+	}
+	
+	/**
+	 * 退出登录
+	 */
+	public function loginout(){
+		session('adminUser',null);
+		$this->redirect('/admin.php?c=login');
 	}
 }
 ?>
