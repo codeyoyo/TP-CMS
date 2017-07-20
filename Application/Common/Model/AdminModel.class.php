@@ -17,7 +17,7 @@ class AdminModel extends Model{
 	 * $username string 用户名
 	 */
 	public function getAdminByUserName($username=''){
-		$ret=$this->_db->where("user_name='{$username}'")->find();
+		$ret=$this->_db->where("username='{$username}'")->find();
 		return $ret;
 	}
 	
@@ -33,7 +33,7 @@ class AdminModel extends Model{
 		if(!$data || !is_array($data)){
 			throw_exception('更新的数据不合法');
 		}
-		return $this->_db->where("admin_id={$id}").save($data);
+		return $this->_db->where("admin_id={$id}")->save($data);
 	}
 }
 ?>
