@@ -26,7 +26,7 @@ class MenuModel extends Model{
 	public function getMenus($data,$pageIndex,$pageSize=10){
 		$data['status']=array('neq',-1);
 		$offset=($pageIndex-1)*$pageSize;
-		$list=$this->_db->where($data)->order('listorder desc,menu_id desc')->limit($offset,$pageSize);
+		$list=$this->_db->where($data)->order('listorder desc,menu_id desc')->limit($offset,$pageSize)->select();
 		return $list;
 	}
 	
@@ -71,7 +71,7 @@ class MenuModel extends Model{
 			throw_exception('ID不合法');
 		}
 		$data=array(
-			'listorder'=>intval($listorder);
+			'listorder'=>intval($listorder)
 		);
 		
 		return $this->_db->where("menu_id={$id}")->save($data);

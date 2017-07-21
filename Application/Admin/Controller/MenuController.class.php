@@ -6,12 +6,21 @@ class MenuController extends  CommonController{
 	
 	public function index(){
 		$data=array();
-		if(isset($_REQUEST['type']) && in_array($_REQUEST, array(0,1))){
+		if(isset($_REQUEST['type']) && (in_array(0,$_REQUEST) || in_array(1,$_REQUEST))){
 			$data['type']=intval($_REQUEST['type']);
 			$this->assign('type',$data['type']);
 		}else{
 			$this->assign('type',-100);
 		}
+		$page=$_REQUEST['p']?$_REQUEST['p']:1;
+		$pageSize=$_REQUEST['pageSize']?$_REQUEST['pageSize']:3;
+		$menus=D('Menu')->getMenus($data,$page,$pageSize);
+		$menusCount=D('Menu')->getMenusCount($data);
+		$res=new \Think\Page($menusCount,$pageSize);
+		$pageRes=$res->show();
+		$this->assign('pageRes',$pageRes);
+		$this->assign('menus',$menus);
+		$this->display();
 	}
 	
 	public function add(){
@@ -97,12 +106,12 @@ class MenuController extends  CommonController{
 					}
 				}
 			}catch(Exception $ex){
-				return jsonResult(0, $ex->getMessage(), $data)
+				return jsonResult(0, $ex->getMessage(), $data);
 			}
 			if($errors){
 				return jsonResult(0,"排序失败-".implode(',', $errors), $data);
 			}
-			return jsonResult(1, '排序成功', $data)
+			return jsonResult(1, '排序成功', $data);
 		}
 		return jsonResult(0,'数据排序失败', $data);
 	}
