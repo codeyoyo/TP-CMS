@@ -35,5 +35,40 @@ class AdminModel extends Model{
 		}
 		return $this->_db->where("admin_id={$id}")->save($data);
 	}
+
+	public function insert($data=array()){
+		if(!$data || !is_array($data)){
+			return 0;
+		}
+		return $this->_db->add($data);
+	}
+
+	public function getAdmin(){
+		$data=array(
+			'status'=>array('neq',-1)
+		);
+		return $this->_db->where($data)->order('admin_id desc')->select();
+	}
+
+	public function updateStatusById($id,$status){
+		if(!is_numeric($status)){
+			throw_exception('status不能为非数字');
+		}
+		if(!$id || !is_numeric($id)){
+			throw_exception('ID不合法');
+		}
+		$data['status']=$status;
+		return $this->_db->where('admin_id'.$id)->save($data);
+	}
+
+	public function getLastLoginUsers(){
+		$thime=mktime(0,0,0,date('m'),date('d'),date('Y'));
+		$data=array(
+			'status'=>1,
+			'lastlogintime'=>array('gt',$time)
+		);
+		$res=$this->_db->where($data)->count();
+		return $res['tp_count'];
+	}
 }
 ?>

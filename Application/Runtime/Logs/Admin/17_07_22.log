@@ -1,0 +1,255 @@
+[ 2017-07-22T11:57:26+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000960s ]
+NOTIC: [8] Undefined variable: module D:\lzy\code\TP-CMS\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var D:\lzy\code\TP-CMS\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\lzy\code\TP-CMS\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given D:\lzy\code\TP-CMS\ThinkPHP\Common\functions.php 第 990 行.
+
+[ 2017-07-22T11:57:26+08:00 ] 127.0.0.1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000616s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000705s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2017-07-22T11:57:33+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant ret - assumed 'ret' D:\lzy\code\TP-CMS\Application\Admin\Controller\LoginController.class.php 第 27 行.
+NOTIC: [2] Missing argument 3 for jsonResult(), called in D:\lzy\code\TP-CMS\Application\Admin\Controller\LoginController.class.php on line 37 and defined D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 6 行.
+NOTIC: [8] Undefined variable: data D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 11 行.
+
+[ 2017-07-22T11:57:34+08:00 ] 127.0.0.1 /admin.php?c=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\lzy\code\TP-CMS\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined variable: admincount D:\lzy\code\TP-CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 112 行.
+NOTIC: [8] Undefined variable: newscount D:\lzy\code\TP-CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 134 行.
+NOTIC: [8] Undefined variable: news D:\lzy\code\TP-CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 156 行.
+NOTIC: [8] Undefined variable: news D:\lzy\code\TP-CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 161 行.
+NOTIC: [8] Undefined variable: news D:\lzy\code\TP-CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 165 行.
+NOTIC: [8] Undefined variable: positioncount D:\lzy\code\TP-CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065170s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000949s ]
+
+[ 2017-07-22T11:57:36+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 5 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageSize D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 16 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\lzy\code\TP-CMS\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY listorder desc,menu_id desc LIMIT 0,3   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined variable: nav D:\lzy\code\TP-CMS\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2017-07-22T11:57:38+08:00 ] 127.0.0.1 /admin.php?c=menu&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 5 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 5 行.
+ERR: 模板不存在:./Application/Admin/View/Menu/add.html
+
+[ 2017-07-22T12:00:15+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 5 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageSize D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 16 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\lzy\code\TP-CMS\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY listorder desc,menu_id desc LIMIT 0,3   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined variable: nav D:\lzy\code\TP-CMS\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001122s ]
+
+[ 2017-07-22T12:00:16+08:00 ] 127.0.0.1 /admin.php?c=menu&a=listorder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 5 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 5 行.
+NOTIC: [8] Undefined variable: listorder D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 102 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 102 行.
+
+[ 2017-07-22T12:00:19+08:00 ] 127.0.0.1 /admin.php?c=menu&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 5 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 5 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\lzy\code\TP-CMS\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined variable: menus D:\lzy\code\TP-CMS\Application\Runtime\Cache\Admin\31553d7bb41170a30982ff9dddd5d67e.php 第 118 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2017-07-22T12:00:23+08:00 ] 127.0.0.1 /admin.php?c=menu&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 5 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 5 行.
+NOTIC: [2] Missing argument 3 for jsonResult(), called in D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php on line 29 and defined D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 6 行.
+NOTIC: [8] Undefined variable: data D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 11 行.
+
+[ 2017-07-22T12:00:27+08:00 ] 127.0.0.1 /admin.php?c=menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $models) D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 5 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 5 行.
+NOTIC: [8] Undefined index: p D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 15 行.
+NOTIC: [8] Undefined index: pageSize D:\lzy\code\TP-CMS\Application\Admin\Controller\MenuController.class.php 第 16 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\lzy\code\TP-CMS\Application\Common\Model\MenuModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 ORDER BY listorder desc,menu_id desc LIMIT 0,3   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_menu` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined index: a D:\lzy\code\TP-CMS\Application\Common\Common\function.php 第 47 行.
+NOTIC: [8] Undefined variable: nav D:\lzy\code\TP-CMS\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 96 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011881s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000809s ]
+
