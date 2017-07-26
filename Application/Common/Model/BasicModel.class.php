@@ -1,8 +1,7 @@
 <?php
 namespace Common\Model;
-use Think\Model;
 
-class BasicModel extends Model{
+class BasicModel {
     public function save($data=array()){
         if(!$data){
             throw_exception('没有提交的数据');

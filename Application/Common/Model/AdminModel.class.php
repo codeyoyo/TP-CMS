@@ -43,7 +43,7 @@ class AdminModel extends Model{
 		return $this->_db->add($data);
 	}
 
-	public function getAdmin(){
+	public function getAdmins(){
 		$data=array(
 			'status'=>array('neq',-1)
 		);
@@ -58,7 +58,7 @@ class AdminModel extends Model{
 			throw_exception('ID不合法');
 		}
 		$data['status']=$status;
-		return $this->_db->where('admin_id'.$id)->save($data);
+		return $this->_db->where('admin_id='.$id)->save($data);
 	}
 
 	public function getLastLoginUsers(){
@@ -69,6 +69,13 @@ class AdminModel extends Model{
 		);
 		$res=$this->_db->where($data)->count();
 		return $res['tp_count'];
+	}
+
+	public function updatePassword($username,$password){
+		$data=array(
+			'password'=>$password
+		);
+		return $this->_db->where("username='{$username}'")->save($data);
 	}
 }
 ?>

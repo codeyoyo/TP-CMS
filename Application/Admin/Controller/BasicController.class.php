@@ -1,6 +1,5 @@
 <?php
 namespace Admin\Controller;
-
 use Think\Controller;
 
 class BasicController extends CommonController
@@ -29,6 +28,7 @@ class BasicController extends CommonController
         } else {
             return jsonResult(0, '没有提交的数据');
         }
+        return jsonResult(1, '配置成功！');
     }
 
     public function cache()

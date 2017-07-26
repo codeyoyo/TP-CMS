@@ -18,8 +18,8 @@
 --
 -- Table structure for table `cms_admin`
 --
-create database imooc_singcms;
-use imooc_singcms;
+create database `tp_cms`;
+use `tp_cms`;
 DROP TABLE IF EXISTS `cms_admin`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;

@@ -97,7 +97,7 @@ class MenuModel extends Model{
 			'status'=>1,
 			'type'=>0
 		);
-		return $this->_db->where($data)->order('listordre desc,menu_id desc')->select();
+		return $this->_db->where($data)->order('listorder desc,menu_id desc')->select();
 	}
 }
 ?>
