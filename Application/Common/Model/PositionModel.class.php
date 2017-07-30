@@ -31,7 +31,7 @@ class PositionModel extends Model
     public function getCount($data = array())
     {
         $conditions=$data;
-        $list=$this->_db->where($conditions)->cunt();
+        $list=$this->_db->where($conditions)->count();
     }
 
     public function insert($res = array())

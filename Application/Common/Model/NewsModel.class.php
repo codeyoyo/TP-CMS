@@ -21,7 +21,7 @@ class NewsModel extends Model
 
     public function insert($data = array())
     {
-        if (!\is_array($data) || !$data) {
+        if (!is_array($data) || !$data) {
             return 0;
         }
         $data['create_time']=time();
@@ -46,7 +46,7 @@ class NewsModel extends Model
         return $list;
     }
 
-    public function getNewsCont($data = array())
+    public function getNewsCount($data = array())
     {
         $conditions=$data;
         if (isset($data['title']) && $data['title']) {
@@ -130,8 +130,9 @@ class NewsModel extends Model
     public function maxcount()
     {
         $data=array(
-            'status'=>1,
+            'status'=>1
         );
-        return $this->_db->where($data)->order('count desc')->limit(1).find();
+        return $this->_db->where($data)->order('count desc')->limit(1)->find();
     }
 }
+?>
