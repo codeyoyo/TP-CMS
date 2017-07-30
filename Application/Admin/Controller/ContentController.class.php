@@ -35,6 +35,9 @@ class ContentController extends CommonController
             if (!isset($_POST['title']) || !$_POST['title']) {
                 return jsonResult(0, '标题不存在');
             }
+            if(!ssset($_Post['small_title']) || !$_Post['small_title']){
+                
+            }
         } else {
             return jsonResult(0, '新增失败');
         }

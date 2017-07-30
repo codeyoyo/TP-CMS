@@ -9,7 +9,7 @@ class PositionContentModel extends Model
 
     public function __construct()
     {
-        $this->_db=M('postition_content');
+        $this->_db=M('position_content');
     }
 
     public function select($data = array(), $limit = 0)
