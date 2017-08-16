@@ -1,0 +1,26 @@
+<include file="Index/header" />
+<?php $vo = $result['news'];?>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-9">
+
+                <div class="news-detail">
+                    <h1>{$vo.title}</h1>
+
+                    {$vo.content}
+                </div>
+
+            </div>
+
+            <include file="Index/right" />
+            <!-- end right-->
+        </div>
+    </div>
+</section>
+</body>
+<script src="/Public/js/jquery.js"></script>
+<script>
+</script>
+
+</html>

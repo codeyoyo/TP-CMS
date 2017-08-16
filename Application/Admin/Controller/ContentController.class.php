@@ -39,10 +39,6 @@ class ContentController extends CommonController
             if (!isset($_POST['title']) || !$_POST['title']) {
                 return jsonResult(0, '标题不存在');
             }
-<<<<<<< HEAD
-            if(!ssset($_Post['small_title']) || !$_Post['small_title']){
-                
-=======
             if(!isset($_POST['small_title']) || !$_POST['small_title']){
                 return jsonResult(0,'短标题不存在');
             }
@@ -67,7 +63,6 @@ class ContentController extends CommonController
                 }
             }else{
                 return jsonResult(0, '新增失败');    
->>>>>>> a2c223986690e5813479126a8e0c132c05ef5839
             }
         } else {
             $webSiteMenu=D('Menu')->getBarMenus();

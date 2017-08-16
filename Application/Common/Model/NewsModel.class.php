@@ -61,7 +61,7 @@ class NewsModel extends Model
 
     public function find($id)
     {
-        $data=$this->_db->where('news_id'.$id)->find();
+        $data=$this->_db->where('news_id='.$id)->find();
         return $data;
     }
 
@@ -85,7 +85,7 @@ class NewsModel extends Model
             throw_exception('id不合法');
         }
         $data['status']=$status;
-        return $this->_db->where('news_id'.$id)->save($data);
+        return $this->_db->where('news_id='.$id)->save($data);
     }
 
     public function updateNewsListorderById($id, $listorder)
@@ -95,7 +95,7 @@ class NewsModel extends Model
         }
 
         $data=array('listorder'=>intval($listorder));
-        return $this->_db->where('news_id'.$id)->save($data);
+        return $this->_db->where('news_id='.$id)->save($data);
     }
 
     public function getNewsByNewsIdIn($newsIds)
@@ -124,7 +124,7 @@ class NewsModel extends Model
             throw_exception('count不能为非数字');
         }
         $data['count']=$count;
-        return $this->_db->where('news_id'.$id)->save($data);
+        return $this->_db->where('news_id='.$id)->save($data);
     }
 
     public function maxcount()

@@ -45,7 +45,7 @@ class MenuModel extends Model{
 		if(!$id || !is_numeric($id)){
 			return array();
 		}
-		return $this->_db->where("menu_id={}$id")->find();
+		return $this->_db->where("menu_id={$id}")->find();
 	}
 	
 	/**
