@@ -7,5 +7,6 @@
 > 管理员密码重置：localhost//admin.php?c=login&a=resetpwd 访问该路径就可以把admin的密码重置为123  
 
 ### 后台管理
-
+<img src='https://github.com/codeyoyo/TP-CMS/blob/master/Public/images/admin.png?raw=true' />
 ### 前台页面
+<img src='https://github.com/codeyoyo/TP-CMS/blob/master/Public/images/admin.png?raw=true' />
